@@ -1,0 +1,35 @@
+Timeframes:
+
+They are composed of the multiplier and the timeframe unit, e.g., “1S”, “30” (30 minutes), “1D” (one day), “3M” (three months).
+The unit is represented by a single letter, with no letter used for minutes: “T” for ticks, “S” for seconds, “D” for days, “W” for weeks, and “M” for months.
+
+To retrieve the alert timeframe, the timeframe.period variable can be used in pinescript.
+
+For the dashboard, we only need 6 timeframes:
+- 5 minute: The alert should contain '5'
+- 15 minute: The alert should contain '15'
+- 1 hour: The alert should contain '60'. There is no “hour” unit; “1H” is not valid. The correct format for one hour is “60”
+- 4 hour: The alert should contain '240'
+- 1 day: The alert should contain 'D'
+- 1 week: The alert should contain 'W'
+
+
+Indicators:
+1 - Zero-Lag MA Trend Levels [ChartPrime (5105)]
+
+2 - Pivot Trendlines with Breaks [HG]
+
+3 - X48 – Indicator | Midnight Hunter | V.1 [X4815162342 (1101)]
+
+4 - Moving Average Simple
+
+5 - Enhanced WaveTrend Oscillator [EliCobra]
+
+
+INSTALLATION:
+To install it locally, you must have a web server with PHP and MYSQL. 
+The "alertdashboard.sql" file at the root contains instructions to create the database, which you can import into phpMyAdmin after creating the database "alertdashboard"
+The Database connection configuration file is set in Models/Core/mysqlconnection.php file and in Models/Core/Manager.php on line 12. 
+
+About the source code:
+I used a Model/View/Controller framework coded from scratch. This ensures the code to be optimised and easy to work with.

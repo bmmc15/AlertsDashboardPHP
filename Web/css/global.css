@@ -1,0 +1,122 @@
+:root {
+  /* Backgrounds */
+  --color-bg: #1E1E2C;
+  --color-surface: #252733;
+  --color-table: #006ebe;
+
+  /* Accent Colors */
+  --color-accent-primary: #4ECCA3; /* Primary Accent */
+  --color-accent-secondary: #FF6F61; /* Secondary Accent */
+  --color-highlight: #FFD700; /* Important Highlights */
+
+  /* Status Colors */
+  --color-success: #3BA55D; /* Success State */
+  --color-warning: #F0A500; /* Warning State */
+  --color-error: #E94560; /* Error State */
+
+  /* Text Colors */
+  --color-text-primary: #E0E0E0; /* Main Text */
+  --color-text-secondary: #A3A3A3; /* Secondary Text */
+  --color-text-placeholder: #7A7A7A; /* Muted/Placeholder Text */
+
+  /* Borders and Dividers */
+  --color-divider: #393E46;
+
+  /* Hover/Active States */
+  --color-hover-bg: #333748; /* Hover Background */
+  --color-active-bg: #2E3440; /* Active/Pressed Background */
+
+
+}
+
+*{
+  box-sizing:border-box;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text-primary);
+  font-family: Calibri;
+}
+
+table{
+  border-collapse: collapse;
+  display: inline-block;
+  margin-right:1rem;
+}
+
+#table_container{
+  display: flex;
+}
+
+th, td{
+  padding:0.2rem;
+}
+
+.blue-cell{
+  background-color: var(--color-table);
+  color: white;
+}
+
+.merged{
+  vertical-align: baseline;
+}
+
+.border-top{
+  border-top:1px solid;
+}
+.card {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-divider);
+}
+
+.button-primary {
+  background-color: var(--color-accent-primary);
+  color: var(--color-text-primary);
+  border:none;
+  cursor: pointer;
+  text-decoration: none;
+  padding:0.2rem;
+  margin:0.5rem;
+  display: inline-block;
+  border-radius: 5px;
+}
+
+.button-red{
+  border:none;
+  cursor: pointer;
+  background-color: var(--color-accent-secondary);
+  color: var(--color-text-primary);
+  padding:0.2rem;
+  margin:0.5rem;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+.button-primary:hover {
+  background-color: var(--color-hover-bg);
+}
+
+.text-error {
+  color: var(--color-error);
+}
+
+.table-settings td, .table-settings th{
+  border:1px solid;
+}
+
+.green-cell{
+  background-color: green;
+}
+
+.red-cell{
+  background-color: red;
+}
+
+.darkgreen-cell{
+  background-color: darkgreen;
+}
+
+.darkred-cell{
+  background-color: darkred;
+}
