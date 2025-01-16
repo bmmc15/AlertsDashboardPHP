@@ -1,8 +1,8 @@
 <?php
 // Verifica se estamos em produção (Heroku) e utiliza a variável de ambiente
-if (getenv("CLEARDB_DATABASE_URL")) {
+if (getenv("JAWSDB_URL")) {
     // Pega as informações da URL do ClearDB
-    $url = parse_url(getenv("CLEARDB_DATABASE_URL"));
+    $url = parse_url(getenv("JAWSDB_URL"));
     
     $host = $url["host"];
     $dbname = substr($url["path"], 1);
